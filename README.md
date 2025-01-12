@@ -1,6 +1,6 @@
 # Stackline Assessment
 
-This simple front-end application leverages React + Redux + Typescript to generate a simple Product's sales information onto a react-data-table and ChartJS line graph.
+This simple front-end application leverages React + Redux + Typescript to generate a simple Product's sales information onto a react-data-table and ChartJS line graph. The data is statically loaded into Redux using a JSON payload file. Use the Update Sales Data button to replicate an API call to pull in new data to update the application state.
 
 This site is deployed on Github Pages and is accessable via: https://r2-dchu.github.io/stackline/
 

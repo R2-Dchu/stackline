@@ -25,7 +25,7 @@ const StacklineRetailSales: React.FC = () => {
             productImage={data.image}
             productSubtitle={data.subtitle}
             productTags={data.tags}
-            />
+          />
         </div>
         <div className="salesGraph">
           <StacklineRetailSalesGraph sales={data.sales} />

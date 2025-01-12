@@ -33,6 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 16px;
 }
 
 .product-tag {
@@ -41,4 +42,15 @@
   border-radius: 6px;
   font-size: 14px;
   color: rgba(102, 102, 102, 1);
+}
+
+.product-info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.update-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
 }

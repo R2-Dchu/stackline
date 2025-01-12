@@ -1,0 +1,44 @@
+.product-info-container {
+  font-family: 'Courier New';
+}
+
+.product-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.product-image {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.product-subtitle {
+  font-size: 14px;
+  color: rgba(102, 102, 102, 1);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.product-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-tag {
+  padding: 8px 12px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 6px;
+  font-size: 14px;
+  color: rgba(102, 102, 102, 1);
+}

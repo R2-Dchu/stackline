@@ -1,6 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import { Sales } from '../types';
+import { Sales } from '../constants/types';
 import { formatCurrency } from "./format-currency";
 import {
   Chart as ChartJS,

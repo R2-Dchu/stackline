@@ -1,4 +1,10 @@
-# React + TypeScript + Vite
+# Stackline Assessment
+
+This simple front-end application leverages React + Redux + Typescript to generate a simple Product's sales information onto a react-data-table and ChartJS line graph.
+
+This site is deployed on Github Pages and is accessable via: https://r2-dchu.github.io/stackline/
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

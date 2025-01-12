@@ -1,6 +1,6 @@
 import React from 'react';
 import DataTable from 'react-data-table-component';
-import { Sales } from '../types';
+import { Sales } from '../constants/types';
 import { formatCurrency } from './format-currency';
 
 interface StacklineRetailSalesTableProps {

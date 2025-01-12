@@ -1,32 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import StacklineRetailSalesProductInfo from './stackline-retail-sales-product-info';
 import StacklineRetailSalesTable from './stackline-retail-sales-table';
 import StacklineRetailSalesGraph from './stackline-retail-graph';
-import { Reviews, Sales } from '../types';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store';
 import '../styles/dashboard.css';
 
-interface StacklineData {
-  id: string;
-  title: string;
-  image: string;
-  subtitle: string;
-  brand: string;
-  reviews: Reviews[];
-  retailer: string;
-  details: string[];
-  tags: string[];
-  sales: Sales[];
-}
-
 const StacklineRetailSales: React.FC = () => {
-  const [data, setData] = useState<StacklineData | null>(null);
-
-  useEffect(() => {
-    fetch('stackline_frontend_assessment_data_2021.json')
-      .then((response) => response.json())
-      .then((jsonData: StacklineData) => setData(jsonData))
-      .catch((error) => console.error('There was an error fetching JSON:', error));
-  }, []);
+  const data = useSelector((state: RootState) => state.sales);
   
   if(!data) {
     return <div>Still loading...</div>;

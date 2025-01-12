@@ -18,6 +18,10 @@ const StacklineRetailSalesProductInfo: React.FC<StacklineRetailSalesProductInfoP
   productSubtitle, 
   productTags
 }) => {
+  // Added a button to mock out the API payload change for redux state management
+  // Since the data is static, I would normally just use local state to manage this, but for the sake of the exercise, 
+  // I'm using redux to manage the state change as if it were coming from an API
+  // If this were from an API the data would be pulled from a fetch instead of directly from a json file
   const dispatch = useDispatch();
 
   const [isUpdatedData, setIsUpdatedData] = React.useState(true);
